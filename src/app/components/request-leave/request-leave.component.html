@@ -1,0 +1,118 @@
+<div class="container d-flex flex-column align-items-between h-100">
+    <div class="row">
+        <!--  -->
+        <div class="col-12">
+            <div class="card shadow px-2 mt-3">
+                <table class="table table-striped table-borderless para-lg tbl-signoff">
+                    <thead>
+                        <tr>
+                            <td><strong>Date</strong></td>
+                            <td><strong>Hours</strong></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mon, 19 Sep</td>
+                            <td>8.00 hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Tue, 20 Sep</td>
+                            <td>8.00 hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Wed, 21 Sep</td>
+                            <td>8.00 hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Thu, 22 Sep</td>
+                            <td>8.00 hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Fri, 23 Sep</td>
+                            <td>8.00 hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Sat, 24 Sep</td>
+                            <td>8.00 hrs</td>
+                        </tr>
+                        <tr>
+                            <td>Sun, 0 Sep</td>
+                            <td>8.00 hrs</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total Hours</strong></td>
+                            <td><strong>46.00 Hours</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="row my-3">
+        <div class="col-12">
+            <button class="btn btn-p btn-block w-100 pop-heavy" data-bs-toggle="modal"
+                data-bs-target="#noteModal"> Request Leave </button>
+        </div>
+        <div class="col-12 mb-3">
+            <button class="btn btn-outline-p btn-sm pop-heavy w-100 mt-3 para-lg fw-bold">Week 34 Hours Signed Off</button>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-s btn-block w-100">Logout</button>
+        </div>
+    </div>
+    <!--  -->
+</div>
+
+<!-- Add Note Modal -->
+<div class="modal fade" id="noteModal" tabindex="-1" aria-labelledby="noteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Request Leave</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="" name="addNoteForm">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Select Date</label>
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Select Date</label>
+                                <select name="" id="" class="form-select">
+                                    <option value="bereavement">Bereavement</option>
+                                    <option value="Holiday">Holiday</option>
+                                    <option value="Training">Training</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <label for="">Number of Hours</label>
+                                <input type="number" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-s w-100">Send Request</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/lib/mobile-friendly-sketch-pad/lib/sketchpad.js"></script>
+<script>
+    var sketchpad = new Sketchpad({
+        element: '#signature',
+        width: 600,
+        height: 450,
+    });
+</script>

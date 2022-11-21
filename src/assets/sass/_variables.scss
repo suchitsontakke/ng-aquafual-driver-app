@@ -1,0 +1,374 @@
+// colors
+$color-p: #2A8794;
+$color-p-lite2: #D3E7E9;
+$color-p-lite: #F8FFFE;
+$color-s: #E96220;
+$color-s-lite: #F2DFD1;
+$color-fb: #3982E4;
+$color-grey: #a8b0c9;
+$color-darkgrey: #5D758D;
+$color-litegrey: #F2F3F3;
+$color-light: #fff;
+$color-dark: #000;
+$color-success: #198754;
+$color-err: #070505;
+$color-sidebar-p: #17203f;
+$color-sidebar-s: #273050;
+$color-gold: #e19e39;
+$color-luminous: #A4938D;
+$color-darkgreen: #375E6E;
+$color-litegreen: #E4F2F8;
+
+//Effects
+
+.shadow-btn-s {
+    box-shadow: 0 13px 9px rgb(187, 182, 177);
+}
+.shadow-card {
+    box-shadow: 0 30px 20px rgba(246, 245, 254, 0.2);
+}
+.bg-gradient {
+    background: linear-gradient(to right, #1c105e, #2d063c);
+}
+
+
+.bg-light {
+    background-color: $color-light;
+}
+
+.bg-grey {
+    background-color: $color-grey;
+}
+.bg-darkgrey {
+    background-color: $color-darkgrey;
+}
+.bg-litegrey {
+    background-color: $color-litegrey;
+}
+.bg-p {
+    background-color: $color-p;
+}
+.bg-s {
+    background-color: $color-s;
+}
+.bg-s-lite {
+    background-color: $color-s-lite;
+}
+.bg-fb {
+    background-color: $color-fb;
+}
+.bg-p-lite {
+    background-color: $color-p-lite;
+}
+.bg-p-lite2 {
+    background-color: $color-p-lite2;
+}
+.bg-success {
+    background-color: $color-success;
+}
+.bg-gold {
+    background-color: $color-gold;
+}
+
+.bg-darkgreen{
+    background-color: $color-darkgreen;
+}
+
+.bg-litegreen{
+    background-color: $color-litegreen;
+}
+
+.txt-p {
+    color: $color-p;
+}
+.txt-s {
+    color: $color-s;
+}
+
+.txt-fb {
+    color: $color-fb;
+}
+.txt-lite {
+    color: $color-light;
+}
+.txt-grey {
+    color: $color-grey;
+}
+.txt-darkgrey {
+    color: $color-darkgrey;
+}
+.txt-success {
+    color: $color-success;
+}
+.txt-err {
+    color: $color-err;
+}
+.txt-gold {
+    color: $color-gold;
+}
+.txt-dark {
+    color: $color-dark;
+}
+.txt-luminous{
+    color: $color-luminous;
+}
+.txt-darkgreen{
+    color: $color-darkgreen;
+}
+
+
+// Fonts:
+.font-pop {
+    font-family: "Poppins", sans-serif;
+}
+.font-opens {
+    font-family: "Open Sans", sans-serif;
+}
+
+.pop-heavy {
+    @extend .font-pop;
+    font-weight: bold;
+}
+
+.pop-reg {
+    @extend .font-pop;
+    font-weight: normal;
+}
+
+.pop-lite {
+    @extend .font-pop;
+    font-weight: normal !important;
+}
+
+.para-xs {
+    font-size: 12px !important;
+}
+.para-sm {
+    font-size: 14px !important;
+}
+.para-reg {
+    font-size: 16px !important;
+}
+.para-lg {
+    font-size: 18px !important;
+}
+.para-xl {
+    font-size: 20px !important;
+}
+.h-s {
+    font-size: 22px !important;
+}
+.h-m {
+    font-size: 24px !important;
+}
+.h-l {
+    font-size: 28px !important;
+}
+.h-xl {
+    font-size: 32px !important;
+}
+.h-xxl {
+    font-size: 34px !important;
+}
+.h-xxxl {
+    font-size: 42px !important;
+    line-height: 30px;
+}
+
+// Buttons
+
+.btn {
+    @extend .pop-lite;
+    width: auto;
+    height: 50px;
+    line-height: 20px;
+    border-radius: 5px !important;
+    border: none;
+    padding: 15px 30px !important;
+}
+
+.btn-default {
+    background: $color-light;
+    box-shadow: 0 0 5px #8aa4af4d;
+    padding: 15px 20px !important;
+    min-width: none;
+    width: auto;
+
+    &:hover {
+        color: $color-p;
+    }
+}
+
+.btn-p {
+    background-color: $color-p !important;
+    color: $color-light !important;
+}
+.btn-s {
+    background-color: $color-s !important;
+    color: $color-light !important;
+}
+.btn-fb {
+    background-color: $color-fb !important;
+    color: $color-light !important;
+}
+
+.btn-gold {
+    background-color: $color-gold !important;
+    color: $color-light !important;
+}
+
+.btn-light-p {
+    background-color: $color-light !important;
+    color: $color-p !important;
+}
+
+.btn-addon{
+    border-radius: 0 5px 5px 0 !important;
+}
+
+// .btn-light-s {
+//     background-color: $color-light;
+//     color: $color-s;
+// }
+
+.btn-outline-s {
+    background: transparent;
+    color: $color-s;
+    border: 1px solid $color-s;
+    font-weight: bold;
+}
+.btn-outline-p {
+    background: $color-light;
+    color: $color-p !important;
+    border: 1px solid $color-p;
+    &:hover {
+        background: $color-p;
+        border-color: $color-p;
+        color: $color-light !important;
+    }
+    &.active{
+        background-color: $color-p;
+        color: $color-light !important;
+    }
+}
+
+.btn-outline-success {
+    background-color: $color-light;
+    border: 1px solid $color-success !important;
+    color: $color-success;
+    &:hover {
+        background: $color-success;
+        border-color: $color-p;
+        color: $color-light !important;
+    }
+    &[disabled] {
+        color: $color-grey !important;
+        border-color: $color-grey !important;
+    }
+    &.active{
+        background-color: $color-success;
+        color: $color-light;
+    }
+}
+
+.btn-capsule {
+    border-radius: 35px !important;
+}
+
+.btn-auto {
+    width: auto !important;
+    min-width: none !important;
+    height: auto;
+    min-height: auto;
+}
+
+.btn-mini {
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.btn-sm {
+    height: 40px !important;
+    line-height: 10px !important;
+    min-width: 0 !important;
+    padding: 15px 25px !important;
+}
+a:not(footer a) {
+    color: $color-p;
+}
+
+.link-light a,
+a .link-light {
+    color: $color-light;
+    &:hover {
+        color: $color-p;
+        text-decoration: none;
+    }
+}
+
+.link-dark a,
+a .link-dark {
+    color: $color-dark;
+    &:hover {
+        color: $color-p;
+        text-decoration: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn-strong {
+    @extend .pop-heavy;
+}
+
+//width and height
+.w100,
+.w100 * {
+    width: 100%;
+}
+
+.mh80 {
+    min-height: 80vh;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.border-thick{
+    border:5px solid;
+}
+
+.form-group {
+    position: relative;
+    margin-top: 10px;
+
+    label {
+        @extend .para-sm;
+        color: $color-darkgreen;
+        display: inline-block;
+        padding: 3px 0px;
+        z-index: 4;
+    }
+    
+    .input-lg{
+        height: 50px;
+    }
+}
+
+
+.radius-none{
+    border-radius: 0 !important;
+}
+
+.badge{
+    border: 1px solid #000;
+    display: inline-block;
+    width: 50px;
+    max-height: 50px;
+    text-align: center;
+}
